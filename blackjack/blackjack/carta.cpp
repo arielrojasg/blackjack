@@ -1,5 +1,5 @@
 // carta.cpp
-// DefiniciÛn de la clase Carta
+// Definici√≥n de la clase Carta
 
 #include "carta.h"
 
@@ -7,12 +7,12 @@
 // Crea un AS de ESPADAS y boca abajo
 Carta::Carta() : valorCarta(Rango::AS), paloCarta(Palo::ESPADAS), bocaArriba(false) { }
 
-// Constructor por par·metros
-// Recibe el rango, palo y la posiciÛn inicial de la carta
+// Constructor por par√°metros
+// Recibe el rango, palo y la posici√≥n inicial de la carta
 Carta::Carta(Rango r, Palo p, bool b) : valorCarta(r), paloCarta(p), bocaArriba(b) { }
 
 // Destructor
-// VacÌo puesto que no hay memoria por liberar en Carta
+// Vac√≠o puesto que no hay memoria por liberar en Carta
 Carta::~Carta() { }
 
 // Actualiza el valor de la carta - Rango 
@@ -31,3 +31,5 @@ bool Carta::estaBocaArriba() const { return bocaArriba; }
 
 // Voltea la carta - boca arriba a boca abajo o viceversa
 void Carta::voltear() { bocaArriba = !bocaArriba; }
+
+//comentario
